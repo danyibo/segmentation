@@ -4,6 +4,12 @@ import numpy as np
 import random
 from Ankle.tool import FolderProcess
 
+"""
+    该类的作用是对数据进行拆分，传入需要拆分的路径即可
+    拆分的时候会对数据进行复制，这样会避免数据的丢失
+
+"""
+
 
 class SplitData:
     def __init__(self, src_folder_path='', train_test_path=''):
